@@ -1,5 +1,5 @@
-import { StyleSheet, PixelRatio } from 'react-native'
-import { getHeightPercent } from './ratio'
+import { StyleSheet, PixelRatio } from 'react-native';
+import { getHeightPercent } from './ratio';
 
 export default StyleSheet.create({
   container: {},
@@ -52,7 +52,8 @@ export default StyleSheet.create({
     height: getHeightPercent(7),
     justifyContent: 'flex-start',
     alignItems: 'center',
-    paddingHorizontal: 5
+    paddingHorizontal: 5,
+    borderBottomWidth: 0
   },
   itemCountryFlag: {
     justifyContent: 'center',
@@ -64,10 +65,7 @@ export default StyleSheet.create({
     justifyContent: 'space-between',
     flexDirection: 'row',
     width: '100%',
-    borderBottomWidth: 2 / PixelRatio.get(),
-    borderBottomColor: '#ccc',
     height: 22
-
   },
   countryName: {
     fontSize: getHeightPercent(2.2)
@@ -105,4 +103,4 @@ export default StyleSheet.create({
     width: 24,
     resizeMode: 'contain'
   }
-})
+});

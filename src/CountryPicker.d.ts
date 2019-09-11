@@ -317,7 +317,7 @@ export interface CountryPickerProps {
   /**
    * Override any style specified in the component (see source code)
    */
-  styles?: StyleProp<ViewStyle>
+  styles?: any
   /**
    * If set to true, Country Picker List will show calling code after country name. For example: `United States (+1)`
    */

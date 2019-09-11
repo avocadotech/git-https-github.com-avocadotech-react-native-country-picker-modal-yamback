@@ -174,6 +174,8 @@ export default class CountryPicker extends Component {
       letters: this.getLetters(countryList)
     }
 
+    styles = countryPickerStyles
+
     if (this.props.styles) {
       Object.keys(countryPickerStyles).forEach(key => {
         styles[key] = StyleSheet.flatten([
@@ -182,8 +184,6 @@ export default class CountryPicker extends Component {
         ])
       })
       styles = StyleSheet.create(styles)
-    } else {
-      styles = countryPickerStyles
     }
 
     const options = Object.assign({
